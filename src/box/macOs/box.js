@@ -15,14 +15,46 @@ import Text from '../../text/macOs/text';
 @Padding()
 @Alignment()
 @Hidden()
+
 class Box extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string} background - Sets the background color of a component.
+     */
     ...backgroundPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} width - Sets the width of a component.
+     * @property {PropTypes.string|PropTypes.number} height - Sets the height of a component.
+     */
     ...dimensionPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} margin - Sets the outer margin of a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} marginTop - Sets the outer margin top of a component.
+     * @property {PropTypes.string|PropTypes.number} marginLeft - Sets the outer margin left of a component.
+     * @property {PropTypes.string|PropTypes.number} marginRight - Sets the outer margin right of a component.
+     * @property {PropTypes.string|PropTypes.number} marginBottom - Sets the outer margin bottom of a component.
+     */
     ...marginPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} padding - Sets the padding inside a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} paddingTop - Sets the padding top inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingLeft - Sets the padding left inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingRight - Sets the padding right inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingBottom - Sets the padding bottom inside a component.
+     */
     ...paddingPropTypes,
+    /**
+     * @property {PropTypes.string} horizontalAlignment - Sets the horizontal alignment of the component's content. Property value "left", "center", "right".
+     * @property {PropTypes.string} verticalAlignment - Sets the vertical alignment of the component's content. Property value "top", "center", "bottom".
+     */
     ...alignmentPropTypes,
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string} label - Adds a label to the box.
+     */
     label: PropTypes.string
   };
 
@@ -77,81 +109,6 @@ class Box extends Component {
 
     );
   }
-}
-
-My_form.propTypes = {
-    /**
-     * @property {PropTypes.string} background - Sets the background color of a component.
-     */
-    background: PropTypes.string,
-    /**
-     * @property {PropTypes.number} height - Sets the height of a component.
-     */
-    height: PropTypes.number,
-    /**
-     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
-     */
-    hidden: PropTypes.bool,
-    /**
-     * @property {PropTypes.string} horizontalAlignment - Sets the horizontal alignment of the component's content
-     * Property value "left", "center", "right"
-     */
-    horizontalAlignment: PropTypes.string,
-    /**
-     * @property {PropTypes.string} label - Adds a label to the box.
-     */
-    label: PropTypes.string,
-    /**
-     * @property {PropTypes.func} margin - Sets the outer margin of a component.
-     * E.G. "30px 20px"
-     */
-    margin: PropTypes.func,
-    /**
-     * @property {PropTypes.func} marginBottom - Sets the outer margin bottom of a component.
-     */
-    marginBottom: PropTypes.func,
-    /**
-     * @property {PropTypes.func} marginLeft - Sets the outer margin left of a component.
-     */
-    marginLeft: PropTypes.func,
-    /**
-     * @property {PropTypes.func} marginRight - Sets the outer margin right of a component.
-     */
-    marginRight: PropTypes.func,
-    /**
-     * @property {PropTypes.func} marginTop - Sets the outer margin top of a component.
-     */
-    marginTop: PropTypes.func,
-    /**
-     * @property {PropTypes.func} padding - Sets the padding inside a component.
-     * E.G. "30px 20px"
-     */
-    padding: PropTypes.func,
-    /**
-     * @property {PropTypes.func} paddingBottom - Sets the padding bottom inside a component.
-     */
-    paddingBottom: PropTypes.func,
-    /**
-     * @property {PropTypes.func} paddingLeft - Sets the padding left inside a component.
-     */
-    paddingLeft: PropTypes.func,
-    /**
-     * @property {PropTypes.func} paddingRight - Sets the padding right inside a component.
-     */
-    paddingRight: PropTypes.func,
-    /**
-     * @property {PropTypes.string|PropTypes.number} paddingTop - Sets the padding top inside a component.
-     */
-    paddingTop: [PropTypes.string,PropTypes.number],
-    /**
-     * @property {PropTypes.string} verticalAlignment - Sets the vertical alignment of the component's content.
-     * Property value "top", "center", "bottom"
-     */
-    verticalAlignment: PropTypes.string,
-    /**
-     * @property {PropTypes.number} width - Sets the width of a component.
-     */
-    width: PropTypes.number
 }
 
 export default Box;
