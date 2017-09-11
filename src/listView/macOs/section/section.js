@@ -3,8 +3,15 @@ import PropTypes from 'prop-types';
 import Header from './header/header';
 import styles from './style/10.11';
 
+/**
+ * @description ListViewSection
+ */
+
 class Section extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string|PropTypes.element|PropTypes.array} header - Sets the header or header element of the component.
+     */
     header: PropTypes.oneOfType([PropTypes.string, PropTypes.element, PropTypes.array])
   };
 

@@ -4,11 +4,36 @@ import { hiddenPropTypes } from '../../style/hidden';
 import styles from './styles/10.11';
 import { startAnimation, stopAnimation } from './progressCircleAnimation';
 
+/**
+ * @description Progress Circle
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { ProgressCircle } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   render() {
+ *     return (
+ *       <ProgressCircle size={25}/>
+ *     );
+ *   }
+ * }
+ */
+
 class ProgressCircle extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
     absolute: PropTypes.bool,
+    /**
+     * @property {PropTypes.string} color - Sets the color of the progress circle.
+     */
     color: PropTypes.string,
+    /**
+     * @property {PropTypes.number} size - Sets the size of the progress circle.
+     */
     size: PropTypes.number
   };
 

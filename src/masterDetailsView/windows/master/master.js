@@ -62,12 +62,32 @@ const styles = {
 @ColorContext()
 @ThemeContext()
 @Radium
+
+/**
+ * @description MasterDetailsViewItem
+ */
+
 class Master extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string} color - Sets the main color of a component.
+     */
     ...colorPropTypes,
+    /**
+     * @property {PropTypes.string} theme - Sets the UI theme that is used by this component and its children elements. Property value "light", "dark".
+     */
     ...themePropTypes,
+    /**
+     * @property {PropTypes.bool} selected - Master is selected.
+     */
     selected: PropTypes.bool,
+    /**
+     * @property {PropTypes.string|PropTypes.number} width - Sets the width of a component.
+     */ 
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    /**
+     * @property {PropTypes.bool} push - Display push animation when selecting an item.
+     */
     push: PropTypes.bool
   };
 

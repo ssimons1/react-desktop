@@ -27,11 +27,73 @@ function applyItem() {
 @Dimension()
 @Margin()
 @Hidden()
+
+/**
+ * @description SegmentedControl
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { SegmentedControl, SegmentedControlItem, Text } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   constructor() {
+ *     super();
+ *     this.state = { selected: 1 }
+ *   }
+ * 
+ *   render() {
+ *     return (
+ *       <SegmentedControl box>
+ *         {this.renderItems()}
+ *       </SegmentedControl>
+ *     );
+ *   }
+ * 
+ *   renderItems() {
+ *     return [
+ *       this.renderItem(1, 'Tab 1', <Text>Content 1</Text>),
+ *       this.renderItem(2, 'Tab 2', <Text>Content 2</Text>),
+ *       this.renderItem(3, 'Tab 3', <Text>Content 3</Text>)
+ *     ];
+ *   }
+ * 
+ *   renderItem(key, title, content) {
+ *     return (
+ *       <SegmentedControlItem
+ *         key={key}
+ *         title={title}
+ *         selected={this.state.selected === key}
+ *         onSelect={() => this.setState({ selected: key })}
+ *       >
+ *         {content}
+ *       </SegmentedControlItem>
+ *     );
+ *   }
+ * }
+ */
+
 class SegmentedControl extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string|PropTypes.number} width - Sets the width of a component.
+     * @property {PropTypes.string|PropTypes.number} height - Sets the height of a component.
+     */
     ...dimensionPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} margin - Sets the outer margin of a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} marginTop - Sets the outer margin top of a component.
+     * @property {PropTypes.string|PropTypes.number} marginLeft - Sets the outer margin left of a component.
+     * @property {PropTypes.string|PropTypes.number} marginRight - Sets the outer margin right of a component.
+     * @property {PropTypes.string|PropTypes.number} marginBottom - Sets the outer margin bottom of a component.
+     */
     ...marginPropTypes,
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.bool} box - Sets whether the item is in a box or not.
+     */
     box: PropTypes.bool
   };
 

@@ -14,15 +14,65 @@ import Radium from 'radium';
 @Hidden()
 @FontSize()
 @Radium
+
+/**
+ * @description Button
+ * @example 
+ *
+ * import React, { Component } from 'react';
+ * import { Button } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   render() {
+ *     return (
+ *       <Button color="blue" onClick={() => console.log('Clicked!')}>
+ *         Press me!
+ *       </Button>
+ *     );
+ *   }
+ * }
+ */
 class Button extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} size - Sets the font size of a component.
+     */
     ...fontSizePropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} padding - Sets the padding inside a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} paddingTop - Sets the padding top inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingLeft - Sets the padding left inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingRight - Sets the padding right inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingBottom - Sets the padding bottom inside a component.
+     */
     ...paddingPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} margin - Sets the outer margin of a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} marginTop - Sets the outer margin top of a component.
+     * @property {PropTypes.string|PropTypes.number} marginLeft - Sets the outer margin left of a component.
+     * @property {PropTypes.string|PropTypes.number} marginRight - Sets the outer margin right of a component.
+     * @property {PropTypes.string|PropTypes.number} marginBottom - Sets the outer margin bottom of a component.
+     */
     ...marginPropTypes,
+    /**
+     * @property {PropTypes.string} type - Sets the type of the button. Property value "button" "submit". Default value "button".
+     */
     type: PropTypes.string,
+    /**
+     * @property {PropTypes.string|PropTypes.bool} color - Sets the color of the button. Property value null "blue".
+     */
     color: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+    /**
+     * @property {PropTypes.func} onClick - Callback function when the button is pressed.
+     */
     onClick: PropTypes.func,
+    /**
+     * @property {PropTypes.func} onEnter - Callback function when the the enter key is pressed.
+     */
     onEnter: PropTypes.func,
     disabled: PropTypes.bool
   };

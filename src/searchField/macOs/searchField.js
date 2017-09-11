@@ -8,9 +8,42 @@ import cancelAnimation from './cancelAnimation';
 import ValueRef from '../../ValueRef';
 
 @ValueRef()
+
+/**
+ * @description SearchField
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { TitleBar, Toolbar, SearchField } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   handleChange = e => console.log(e.target.value);
+ * 
+ *   render() {
+ *     return (
+ *       <TitleBar inset>
+ *         <Toolbar height="43" horizontalAlignment="right">
+ *           <SearchField
+ *             placeholder="Search"
+ *             defaultValue=""
+ *             onChange={this.handleChange}
+ *           />
+ *         </Toolbar>
+ *       </TitleBar>
+ *     );
+ *   }
+ * }
+ */
+
 class SearchInput extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.func} onCancel - Callback function when the user press the cancel button.
+     */
     onCancel: PropTypes.func,
+    /**
+     * @property {PropTypes.bool} cancel - Sets whether the cancel button is visible.
+     */
     cancel: PropTypes.bool,
   };
 

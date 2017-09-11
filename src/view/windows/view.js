@@ -24,16 +24,77 @@ var styles = {
 @Hidden()
 @ColorContext()
 @ThemeContext()
+
+/**
+ * @description View
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { View, Text } from 'react-desktop/windows';
+ * 
+ * export default class extends Component {
+ *   static defaultProps = {
+ *     color: '#cc7f29',
+ *     theme: 'light'
+ *   };
+ * 
+ *   render() {
+ *     return (
+ *       <View
+ *         color={this.props.color}
+ *         background
+ *         padding="20px"
+ *         horizontalAlignment="center"
+ *         verticalAlignment="center"
+ *         width="200px"
+ *         height="100px"
+ *       >
+ *         <Text color={this.props.theme === 'dark' ? 'white' : '#333'}>Hello World</Text>
+ *       </View>
+ *     );
+ *   }
+ * }
+ */
+
 class View extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string} color - Sets the main color of a component and it's children.
+     * @property {PropTypes.string} theme - Sets the UI theme that is used by this component and its children elements. Property value "light", "dark".
+     *
+     * @property {PropTypes.string} horizontalAlignment - Sets the horizontal alignment of the component's content. Property value "left", "center", "right".
+     * @property {PropTypes.string} verticalAlignment - Sets the vertical alignment of the component's content. Property value "top", "center", "bottom".
+     */
     ...alignmentPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} width - Sets the width of a component.
+     */
     ...widthPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} margin - Sets the outer margin of a component. E.G. "30px 20px".
+     */ 
     ...marginPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} padding - Sets the padding inside a component. E.G. "30px 20px".
+     */ 
     ...paddingPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.bool} background - Sets the background color of a component, if bool, the color will be used as the background color.
+     */  
     ...backgroundContextTypes,
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} width - Sets the width of a component.
+     * @property {PropTypes.string|PropTypes.number} height - Sets the height of a component.
+     */ 
     ...dimensionPropTypes,
     direction: PropTypes.string,
+    /**
+     * @property {PropTypes.string} layout - Sets the direction of the content. Property value "horizontal", "vertical".
+     */
     layout: PropTypes.string
   };
 

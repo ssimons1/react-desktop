@@ -14,14 +14,50 @@ import styles from './style/10.11';
 @Hidden()
 @Margin({ marginTop: '4px', marginBottom: '4px' })
 @Padding({ paddingLeft: '18px', paddingRight: '18px', paddingTop: '5px', paddingBottom: '5px' })
+
+/**
+ * @description ListViewRow
+ */
+
 class Row extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string} background - Sets the background color of a component.
+     */
     ...backgroundPropTypes,
+    /**
+     * @property {PropTypes.string} horizontalAlignment - Sets the horizontal alignment of the component's content. Property value "left", "center", "right".
+     * @property {PropTypes.string} verticalAlignment - Sets the vertical alignment of the component's content. Property value "top", "center", "bottom".
+     */
     ...alignmentPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} width - Sets the width of a component.
+     * @property {PropTypes.string|PropTypes.number} height - Sets the height of a component.
+     */
     ...dimensionPropTypes,
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} margin - Sets the outer margin of a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} marginTop - Sets the outer margin top of a component.
+     * @property {PropTypes.string|PropTypes.number} marginLeft - Sets the outer margin left of a component.
+     * @property {PropTypes.string|PropTypes.number} marginRight - Sets the outer margin right of a component.
+     * @property {PropTypes.string|PropTypes.number} marginBottom - Sets the outer margin bottom of a component.
+     */
     ...marginPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} padding - Sets the padding inside a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} paddingTop - Sets the padding top inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingLeft - Sets the padding left inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingRight - Sets the padding right inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingBottom - Sets the padding bottom inside a component.
+     */
     ...paddingPropTypes,
+    /**
+     * @property {PropTypes.string} layout - Sets the direction of the content. Property value "horizontal", "vertical".
+     */
     layout: PropTypes.string
   };
 

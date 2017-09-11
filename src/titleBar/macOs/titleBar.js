@@ -7,17 +7,74 @@ import Dimension, { dimensionPropTypes } from '../../style/dimension';
 
 @Dimension({ width: '100%' })
 @WindowFocus()
+
+/**
+ * @description TitleBar
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { View, TitleBar } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   constructor() {
+ *     super();
+ *     this.state = { isFullscreen: false };
+ *   }
+ * 
+ *   render() {
+ *     return (
+ *       <TitleBar
+ *         title="untitled text 5"
+ *         controls
+ *         isFullscreen={this.state.isFullscreen}
+ *         onCloseClick={() => console.log('Close window')}
+ *         onMinimizeClick={() => console.log('Minimize window')}
+ *         onMaximizeClick={() => console.log('Mazimize window')}
+ *         onResizeClick={() => this.setState({ isFullscreen: !this.state.isFullscreen })}
+ *       />
+ *     );
+ *   }
+ * }
+ */
+
 class TitleBar extends Component {
-  static propTypes = {
+  static propTypes = { 
     ...dimensionPropTypes,
+    /**
+     * @property {PropTypes.string} title - Sets the title of the title bar.
+     */       
     title: PropTypes.string,
+    /**
+     * @property {PropTypes.bool} inset - Sets the controls of the title bar state to be inset.
+     */    
     inset: PropTypes.bool,
+    /**
+     * @property {PropTypes.bool} controls - Sets the visibility of the controls of the title bar.
+     */
     controls: PropTypes.bool,
+    /**
+     * @property {PropTypes.bool} transparent - Makes the title bar background transparent.
+     */   
     transparent: PropTypes.bool,
+    /**
+     * @property {PropTypes.bool} isFullscreen - Sets the title bar state to fullscreen.
+     */    
     isFullscreen: PropTypes.bool,
+    /**
+     * @property {PropTypes.func} onCloseClick - Callback function of the close button.
+     */        
     onCloseClick: PropTypes.func,
+    /**
+     * @property {PropTypes.func} onMinimizeClick - Callback function of the minimize button.
+     */      
     onMinimizeClick: PropTypes.func,
+    /**
+     * @property {PropTypes.func} onMaximizeClick - Callback function of the maximize button.
+     */          
     onMaximizeClick: PropTypes.func,
+    /**
+     * @property {PropTypes.func} onResizeClick - Callback function of the resize button.
+     */  
     onResizeClick: PropTypes.func
   };
 

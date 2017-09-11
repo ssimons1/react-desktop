@@ -15,6 +15,7 @@ const styles = {
 @ColorContext()
 @ThemeContext()
 @Radium
+
 class Button extends Component {
   static propTypes = {
     onClick: PropTypes.func

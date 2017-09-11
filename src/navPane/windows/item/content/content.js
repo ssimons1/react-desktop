@@ -10,6 +10,7 @@ import styles from '../../style/windows10';
 @Margin()
 @Background()
 @Alignment()
+
 class Content extends Component {
   static propTypes = {
     ...paddingPropTypes,

@@ -12,12 +12,52 @@ import ValueRef from '../../ValueRef';
 @ColorContext()
 @ThemeContext()
 @Radium
+
+/**
+ * @description Checkbox
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { Checkbox } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   render() {
+ *     return (
+ *       <Checkbox
+ *         label="Check me!"
+ *         onChange={(e) => console.log(e.target.value)}
+ *         defaultValue="I got checked!"
+ *         defaultChecked
+ *       />
+ *     );
+ *   }
+ * }
+ */
+
 class Checkbox extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string} defaultValue - Sets the default value of the input.
+     * @property {PropTypes.string} defaultChecked - If true, the checkbox is checked by default.
+     * 
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string} color - Sets the color of the checkbox.
+     */
     ...colorPropTypes,
+    /**
+     * @property {PropTypes.string} theme - Sets the UI theme that is used by this component and its children elements. Property value "light", "dark".
+     */
     ...themePropTypes,
+    /**
+     * @property {PropTypes.string} label - Adds a label to the checkbox.
+     */
     label: PropTypes.string,
+    /**
+     * @property {PropTypes.func} onChange - Callback function when the checkbox has changed.
+     */
     onChange: PropTypes.func
   };
 

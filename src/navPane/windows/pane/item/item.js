@@ -9,12 +9,13 @@ import Radium from 'radium';
 @ColorContext()
 @ThemeContext()
 @Radium
+
 class Item extends Component {
   static propTypes = {
     isPaneExpanded: PropTypes.bool.isRequired,
     title: PropTypes.oneOfType([PropTypes.string, PropTypes.element, PropTypes.array]),
     icon: PropTypes.oneOfType([PropTypes.string, PropTypes.element, PropTypes.array]),
-    push: PropTypes.bool,
+    push: PropTypes.bool,  
     onSelect: PropTypes.func,
     selected: PropTypes.bool
   };

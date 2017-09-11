@@ -45,6 +45,7 @@ styles.fadeSpanStyle = {
 };
 
 @Radium
+
 class Title extends Component {
   static propTypes = {
     theme: PropTypes.string,

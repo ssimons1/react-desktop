@@ -15,10 +15,24 @@ const styles = {
 
 @ColorContext()
 @ThemeContext()
+
+/**
+ * @description MasterDetailsViewItemDetails
+ */
+
 class Details extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string} color - Sets the main color of a component.
+     */
     ...colorPropTypes,
+    /**
+     * @property {PropTypes.string} theme - Sets the UI theme that is used by this component and its children elements. Property value "light", "dark".
+     */
     ...themePropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.bool} background - Sets the background color of a component, if bool, the color will be used as the background color.
+     */
     background: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
   };
 

@@ -39,9 +39,20 @@ function applyChildenClasses() {
 @applyChildenClasses()
 @ColorContext()
 @ThemeContext()
+
+/**
+ * @description MasterDetailsViewItem
+ */
+
 class Item extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string} color - Sets the main color of a component.
+     */
     ...colorPropTypes,
+    /**
+     * @property {PropTypes.string} theme - Sets the UI theme that is used by this component and its children elements. Property value "light", "dark".
+     */
     ...themePropTypes,
     selected: PropTypes.bool
   };

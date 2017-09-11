@@ -25,11 +25,27 @@ const styles = {
   }
 };
 
+/**
+ * @description ToolbarNavItem
+ */
+
 class Item extends Component {
   static propTypes = {
-    titel: PropTypes.string,
+    /**
+     * @property {PropTypes.string} title - Sets the title of the item.
+     */
+    title: PropTypes.string,
+    /**
+     * @property {PropTypes.element|PropTypes.array} icon - Sets the icon element of the item.
+     */   
     icon: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
+    /**
+     * @property {PropTypes.bool} selected - Sets whether the item is selected or not.
+     */    
     selected: PropTypes.bool,
+    /**
+     * @property {PropTypes.func} onClick - Callback function when the item is pressed.
+     */        
     onClick: PropTypes.func
   };
 

@@ -4,6 +4,11 @@ import Radium from 'radium';
 import styles from './styles/10.11';
 
 @Radium
+
+/**
+ * @description Circle
+ */
+
 class Circle extends Component {
   static propTypes = {
     show: PropTypes.bool,

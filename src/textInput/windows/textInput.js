@@ -19,16 +19,75 @@ import Radium from 'radium';
 @ColorContext()
 @ThemeContext()
 @Radium
+
+/**
+ * @description TextInput
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { TextInput } from 'react-desktop/windows';
+ * 
+ * export default class extends Component {
+ *   static defaultProps = {
+ *     color: '#cc7f29',
+ *     theme: 'light'
+ *   };
+ * 
+ *   handleChange = e => console.log(e.target.value);
+ * 
+ *   render() {
+ *     return (
+ *       <TextInput
+ *         ref="input"
+ *         theme={this.props.theme}
+ *         color={this.props.color}
+ *         background
+ *         label="My Input"
+ *         placeholder="My Input"
+ *         onChange={this.handleChange}
+ *       />
+ *     );
+ *   }
+ * }
+ */
+
 class TextInput extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string} theme - Sets the UI theme that is used by this component and its children elements. Property value "light", "dark".
+     */
     ...themePropTypes,
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} width - Sets the width of a component.
+     */
     ...dimensionPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} margin - Sets the outer margin of a component. E.G. "30px 20px".
+     */ 
     ...marginPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.bool} background - Sets the background color of a component, if bool, the color will be used as the background color.
+     */
     ...backgroundPropTypes,
+    /**
+     * @property {PropTypes.string} label - Adds a label to the input.
+     */    
     label: PropTypes.string,
+    /**
+     * @property {PropTypes.string|PropTypes.bool} labelColor - Sets whether the label text is colored (bool) or sets the color of the label text (string).
+     */    
     labelColor: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+    /**
+     * @property {PropTypes.object} labelStyle - Custom styles for the label.
+     */        
     labelStyle: PropTypes.object,
+    /**
+     * @property {PropTypes.bool} password - Sets the input type to password.
+     */    
     password: PropTypes.bool
   };
 

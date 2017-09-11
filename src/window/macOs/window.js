@@ -14,13 +14,61 @@ import Dimension, { dimensionPropTypes }  from '../../style/dimension';
 @Alignment()
 @Hidden()
 @Dimension({ width: '100vw', height: '100vh' })
+
+/**
+ * @description Window
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { Window, TitleBar, Text } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   render() {
+ *     return (
+ *       <Window
+ *         chrome
+ *         height="300px"
+ *         padding="10px"
+ *       >
+ *         <TitleBar title="untitled text 5" controls/>
+ *         <Text>Hello World</Text>
+ *       </Window>
+ *     );
+ *   }
+ * }
+ */
+
 class Window extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.string|PropTypes.number} padding - Sets the padding inside a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} paddingTop - Sets the padding top inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingLeft - Sets the padding left inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingRight - Sets the padding right inside a component.
+     * @property {PropTypes.string|PropTypes.number} paddingBottom - Sets the padding bottom inside a component.
+     */
     ...paddingPropTypes,
+    /**
+     * @property {PropTypes.string} background - Sets the background color of a component.
+     */
     ...backgroundPropTypes,
+    /**
+     * @property {PropTypes.string} horizontalAlignment - Sets the horizontal alignment of the component's content. Property value "left", "center", "right".
+     * @property {PropTypes.string} verticalAlignment - Sets the vertical alignment of the component's content. Property value "top", "center", "bottom".
+     */
     ...alignmentPropTypes,
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} width - Sets the width of a component.
+     * @property {PropTypes.string|PropTypes.number} height - Sets the height of a component.
+     */   
     ...dimensionPropTypes,
+    /**
+     * @property {PropTypes.bool} chrome - Sets the chrome of the window.
+     */
     chrome: PropTypes.bool
   };
 

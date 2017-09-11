@@ -12,10 +12,50 @@ import WindowFocus from '../../windowFocus';
 @WindowFocus()
 @Hidden()
 @Radium
+
+/**
+ * @description Radio
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { View, Radio } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   render() {
+ *     return (
+ *       <View horizontalAlignment="center" direction="column">
+ *           <Radio
+ *             label="Check me!"
+ *             name="radio1"
+ *             onChange={(e) => console.log(e.target.value)}
+ *             defaultValue="I got checked!"
+ *             defaultChecked
+ *           />
+ *           <Radio
+ *             label="Check me!"
+ *             name="radio1"
+ *             onChange={(e) => console.log(e.target.value)}
+ *             defaultValue="I got checked!"
+ *           />
+ *       </View>
+ *     );
+ *   }
+ * }
+ */
+
 class Radio extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string} label - Adds a label to the checkbox.
+     */
     label: PropTypes.string,
+    /**
+     * @property {PropTypes.func} onChange - Callback function when the checkbox has changed.
+     */
     onChange: PropTypes.func
   };
 

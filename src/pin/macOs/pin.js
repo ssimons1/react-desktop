@@ -7,12 +7,54 @@ import Margin, { marginPropTypes, removeMarginProps } from '../../style/margin';
 
 @Hidden()
 @Margin()
+
+/**
+ * @description Pin
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { Pin, View } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   render() {
+ *     return (
+ *       <View background="#efeff1" padding="20px">
+ *         <Pin
+ *           onChange={value => console.log(value)}
+ *           length={4}
+ *           reveal
+ *         />
+ *       </View>
+ *     );
+ *   }
+ * }
+ */
+
 class Pin extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} margin - Sets the outer margin of a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} marginTop - Sets the outer margin top of a component.
+     * @property {PropTypes.string|PropTypes.number} marginLeft - Sets the outer margin left of a component.
+     * @property {PropTypes.string|PropTypes.number} marginRight - Sets the outer margin right of a component.
+     * @property {PropTypes.string|PropTypes.number} marginBottom - Sets the outer margin bottom of a component.
+     */ 
     ...marginPropTypes,
+    /**
+     * @property {PropTypes.bool} reveal - Reveals the characters in the pin.
+     */
     reveal: PropTypes.bool,
+    /**
+     * @property {PropTypes.number} length - Sets the length of the pin.
+     */
     length: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    /**
+     * @property {PropTypes.func} onChange - Callback function when the input changes.
+     */
     onChange: PropTypes.func
   };
 

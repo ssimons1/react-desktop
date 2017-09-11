@@ -13,12 +13,65 @@ import ValueRef from '../../ValueRef';
 @ColorContext()
 @ThemeContext()
 @Radium
+
+/**
+ * @description Radio
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { View, Radio } from 'react-desktop/windows';
+ * 
+ * export default class extends Component {
+ *   static defaultProps = {
+ *     color: '#cc7f29',
+ *     theme: 'light'
+ *   };
+ * 
+ *   render() {
+ *     return (
+ *       <View horizontalAlignment="center" layout="vertical" theme={this.props.theme}>
+ *           <Radio
+ *             color={this.props.color}
+ *             label="Check me!"
+ *             name="radio1"
+ *             onChange={(e) => console.log(e.target.value)}
+ *             defaultValue="I got checked!"
+ *             defaultChecked
+ *           />
+ *           <Radio
+ *             color={this.props.color}
+ *             label="Check me!"
+ *             name="radio1"
+ *             onChange={(e) => console.log(e.target.value)}
+ *             defaultValue="I got checked!"
+ *           />
+ *       </View>
+ *     );
+ *   }
+ * }
+ */
+
 class Radio extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string} color - Sets the color of the radio.
+     */
     ...colorPropTypes,
+    /**
+     * @property {PropTypes.string} theme - Sets the UI theme that is used by this component and its children elements. Property value "light", "dark".
+     */
     ...themePropTypes,
+    /**
+     * @property {PropTypes.string} label - Adds a label to the checkbox.
+     */
     label: PropTypes.string,
+    /**
+     * @property {PropTypes.func} onChange - Callback function when the checkbox has changed.
+     */
     onChange: PropTypes.func
   };
 

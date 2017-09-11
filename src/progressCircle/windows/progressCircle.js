@@ -6,11 +6,44 @@ import { startAnimation, stopAnimation } from './progressCircleAnimation';
 import styles from './styles/windows10';
 
 @ColorContext()
+
+/**
+ * @description Progress Circle
+ * @example
+ *
+ * import React, { Component } from 'react';
+ * import { ProgressCircle } from 'react-desktop/windows';
+ * 
+ * export default class extends Component {
+ *   static defaultProps = {
+ *     color: '#cc7f29'
+ *   };
+ * 
+ *   render() {
+ *     return (
+ *       <ProgressCircle
+ *         color={this.props.color}
+ *         size={100}
+ *       />
+ *     );
+ *   }
+ * }
+ */
+
 class ProgressCircle extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string} color - Sets the color of the progress circle.
+     */
     ...colorPropTypes,
     absolute: PropTypes.bool,
+    /**
+     * @property {PropTypes.number} size - Sets the size of the progress circle.
+     */
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
   };
 

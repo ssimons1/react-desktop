@@ -20,19 +20,83 @@ import ValueRef from '../../ValueRef';
 @Hidden()
 @Dimension()
 @Radium
+
+/**
+ * @description TextInput
+ * @example
+ *  
+ * import React, { Component } from 'react';
+ * import { TextInput } from 'react-desktop/macOs';
+ * 
+ * export default class extends Component {
+ *   handleChange = e => console.log(e.target.value);
+ * 
+ *   render() {
+ *     return (
+ *       <TextInput
+ *         label="My Input"
+ *         placeholder="My Input"
+ *         defaultValue=""
+ *         onChange={this.handleChange}
+ *       />
+ *     );
+ *   }
+ * }
+ */
+
 class TextFieldOSX extends Component {
   static propTypes = {
+    /**
+     * @property {PropTypes.bool} hidden - Sets the visibility of a component.
+     */
     ...hiddenPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} margin - Sets the outer margin of a component. E.G. "30px 20px".
+     * @property {PropTypes.string|PropTypes.number} marginTop - Sets the outer margin top of a component.
+     * @property {PropTypes.string|PropTypes.number} marginLeft - Sets the outer margin left of a component.
+     * @property {PropTypes.string|PropTypes.number} marginRight - Sets the outer margin right of a component.
+     * @property {PropTypes.string|PropTypes.number} marginBottom - Sets the outer margin bottom of a component.
+     */
     ...marginPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} width - Sets the width of a component.
+     */
     ...dimensionPropTypes,
+    /**
+     * @property {PropTypes.string|PropTypes.number} size - Sets the font size of a component.
+     */
     ...fontSizePropTypes,
+    /**
+     * @property {PropTypes.string} label - Adds a label to the input.
+     */  
     label: PropTypes.string,
+    /**
+     * @property {PropTypes.bool|PropTypes.number|PropTypes.string} rounded - Sets the roundness of the input border.
+     */    
     rounded: PropTypes.oneOfType([PropTypes.bool, PropTypes.number, PropTypes.string]),
+    /**
+     * @property {PropTypes.bool} focusRing - Sets the visibility of the focus ring around the input.
+     */      
     focusRing: PropTypes.bool,
+    /**
+     * @property {PropTypes.func} onEnter - Callback function when the enter key is pressed.
+     */      
     onEnter: PropTypes.func,
+    /**
+     * @property {PropTypes.bool} centerPlaceholder - Sets whether the placeholder is animated and centered when the input is not focused.
+     */
     centerPlaceholder: PropTypes.bool,
+    /**
+     * @property {PropTypes.element|PropTypes.array} icon - Adds an icon to the input.
+     */
     icon: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
+    /**
+     * @property {PropTypes.string} placeholder - Adds a placeholder to the input.
+     */      
     placeholder: PropTypes.string,
+    /**
+     * @property {PropTypes.bool} password - Sets the input type to password.
+     */    
     password: PropTypes.bool
   };
 
