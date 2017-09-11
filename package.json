@@ -31,7 +31,7 @@
     "prebuild": "rsync -av -delete . build --exclude build --exclude .git --exclude .idea && npm run eslint && npm run test",
     "build": "./node_modules/.bin/babel ./build/src --out-dir ./build/src && ./node_modules/.bin/babel ./build/index.js --out-file ./build/index.js && ./node_modules/.bin/babel ./build/macOs.js --out-file ./build/osx.js && ./node_modules/.bin/babel ./build/macOs.js --out-file ./build/macOs.js && ./node_modules/.bin/babel ./build/windows.js --out-file ./build/windows.js",
     "playground": "./node_modules/.bin/webpack-dev-server --config ./playground/webpack.config.js --colors --inline --port 3001",
-    "build-publish": "npm run build && npm publish ./build"
+    "build-publish": "npm run build && npm publish ./build",
   },
   "dependencies": {
     "radium": "^0.19.1"
