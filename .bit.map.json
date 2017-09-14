@@ -991,22 +991,6 @@
         "origin": "AUTHORED",
         "mainFile": "src/windowFocus.js"
     },
-    "utils/index": {
-        "files": [
-            {
-                "relativePath": "index.js",
-                "test": false,
-                "name": "index.js"
-            },
-            {
-                "relativePath": "test/tests/index.js",
-                "test": true,
-                "name": "index.js"
-            }
-        ],
-        "origin": "AUTHORED",
-        "mainFile": "index.js"
-    },
     "utils/mac-os": {
         "files": [
             {
