@@ -12,20 +12,11 @@ var _checkbox = require('../../src/checkbox/macOs/checkbox');
 
 var _checkbox2 = _interopRequireDefault(_checkbox);
 
-var _checkbox3 = require('../../src/checkbox/windows/checkbox');
-
-var _checkbox4 = _interopRequireDefault(_checkbox3);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 describe('Checkbox', function () {
   it('create osx checkbox', function () {
     var string = (0, _server.renderToString)(_react2.default.createElement(_checkbox2.default, { label: 'my label' }));
-    (0, _chai.expect)(string).to.match(/my label/);
-  });
-
-  it('create windows checkbox', function () {
-    var string = (0, _server.renderToString)(_react2.default.createElement(_checkbox4.default, { label: 'my label' }));
     (0, _chai.expect)(string).to.match(/my label/);
   });
 });
