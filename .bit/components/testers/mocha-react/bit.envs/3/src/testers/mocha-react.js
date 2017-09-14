@@ -239,6 +239,7 @@ function JSONReporter (runner) {
       failures: failures.map(clean),
       passes: passes.map(clean)
     };
+
     runner.testResults = obj;
   });
 }
