@@ -28,6 +28,7 @@ const sinonChai = require('sinon-chai');
 const teaspoon = require('teaspoon');
 const enzyme = require('enzyme');
 const TestUtils = require('react-dom/test-utils');
+const React = require('react');
 const ReactDom = require('react-dom');
 chai.use(sinonChai);
 const isEmptyObject = obj => Object.keys(obj).length === 0;
@@ -71,21 +72,58 @@ function normalizeResults(mochaJsonResults) {
     });
   }
 
+  function normalizeFailure(failure) {
+    const isError = !isEmptyObject(failure.err);
+    return ({
+      title: failure.fullTitle,
+      err: isError ? normalizeError(failure.err) : null,
+      duration: failure.duration
+    });
+  }
+
   return {
     tests: mochaJsonResults.tests.map(normalizeTest),
-    stats: normalizeStats(mochaJsonResults.stats)
+    stats: normalizeStats(mochaJsonResults.stats),
+    failures: mochaJsonResults.failures.map(normalizeFailure)
   };
 }
 
 const run = (specFile) => {
   return new Promise((resolve) => {
-    const mocha = new Mocha({ reporter: JSONReporter, require: './init-jsdom' });
+    const mocha = new Mocha({ reporter: JSONReporter });
     mocha.addFile(specFile);
     mocha.run()
       .on('end', function() { // eslint-disable-line
         return resolve(normalizeResults(this.testResults));
       });
   });
+};
+
+const getTemplate = (name) => {
+  return `import { expect } from 'chai';
+import TestUtils from 'react-dom/test-utils';
+import jsdom from 'mocha-jsdom';
+import React from 'react';
+
+const MyComponent = require(__impl__);
+mockDom('<html><body></body></html>');
+
+describe('#MyComponent', () => {
+  jsdom({ skipWindowCheck: true });
+  let renderedComponent;
+
+  beforeEach(() => {
+    renderedComponent = TestUtils.renderIntoDocument(
+      <MyComponent />
+    );
+  });
+
+  it('should do something cool...', () => {
+    expect(true).to.equal(true);
+  });
+});
+
+`;
 };
 
 module.exports = {
@@ -108,7 +146,8 @@ module.exports = {
     'react-addons-test-utils': TestUtils,
    // 'mocha-jsdom': jsdom,
     'react-dom': ReactDom
-  }
+  },
+  getTemplate,
 };
 
 function Base (runner) {
@@ -200,7 +239,6 @@ function JSONReporter (runner) {
       failures: failures.map(clean),
       passes: passes.map(clean)
     };
-
     runner.testResults = obj;
   });
 }

@@ -19,8 +19,8 @@
                 "name": "box_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/box/macOs/box.js"
+        "mainFile": "src/box/macOs/box.js",
+        "origin": "AUTHORED"
     },
     "components/button-mac": {
         "files": [
@@ -35,8 +35,8 @@
                 "name": "10.11.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/button/macOs/button.js"
+        "mainFile": "src/button/macOs/button.js",
+        "origin": "AUTHORED"
     },
     "components/button-windows": {
         "files": [
@@ -56,8 +56,8 @@
                 "name": "button_windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/button/windows/button.js"
+        "mainFile": "src/button/windows/button.js",
+        "origin": "AUTHORED"
     },
     "components/checkbox-mac": {
         "files": [
@@ -82,8 +82,8 @@
                 "name": "checkbox_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/checkbox/macOs/checkbox.js"
+        "mainFile": "src/checkbox/macOs/checkbox.js",
+        "origin": "AUTHORED"
     },
     "components/checkbox-windows": {
         "files": [
@@ -103,8 +103,8 @@
                 "name": "checkbox_windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/checkbox/windows/checkbox.js"
+        "mainFile": "src/checkbox/windows/checkbox.js",
+        "origin": "AUTHORED"
     },
     "components/dialog": {
         "files": [
@@ -124,8 +124,8 @@
                 "name": "dialog_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/dialog/macOs/dialog.js"
+        "mainFile": "src/dialog/macOs/dialog.js",
+        "origin": "AUTHORED"
     },
     "components/label-mac": {
         "files": [
@@ -135,8 +135,8 @@
                 "name": "label.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/label/macOs/label.js"
+        "mainFile": "src/label/macOs/label.js",
+        "origin": "AUTHORED"
     },
     "components/label-windows": {
         "files": [
@@ -151,8 +151,8 @@
                 "name": "label_windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/label/windows/label.js"
+        "mainFile": "src/label/windows/label.js",
+        "origin": "AUTHORED"
     },
     "components/link": {
         "files": [
@@ -167,8 +167,8 @@
                 "name": "link_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/link/macOs/link.js"
+        "mainFile": "src/link/macOs/link.js",
+        "origin": "AUTHORED"
     },
     "components/list-view": {
         "files": [
@@ -248,8 +248,8 @@
                 "name": "listView.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/listView/macOs/listView.js"
+        "mainFile": "src/listView/macOs/listView.js",
+        "origin": "AUTHORED"
     },
     "components/master-details-view": {
         "files": [
@@ -279,8 +279,8 @@
                 "name": "pane.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/masterDetailsView/windows/masterDetailsView.js"
+        "mainFile": "src/masterDetailsView/windows/masterDetailsView.js",
+        "origin": "AUTHORED"
     },
     "components/nav-pane": {
         "files": [
@@ -330,8 +330,8 @@
                 "name": "windows10.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/navPane/windows/navPane.js"
+        "mainFile": "src/navPane/windows/navPane.js",
+        "origin": "AUTHORED"
     },
     "components/pin": {
         "files": [
@@ -351,8 +351,8 @@
                 "name": "pin_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/pin/macOs/pin.js"
+        "mainFile": "src/pin/macOs/pin.js",
+        "origin": "AUTHORED"
     },
     "components/progress-circle-mac": {
         "files": [
@@ -377,8 +377,8 @@
                 "name": "progressCircle_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/progressCircle/macOs/progressCircle.js"
+        "mainFile": "src/progressCircle/macOs/progressCircle.js",
+        "origin": "AUTHORED"
     },
     "components/progress-circle-windows": {
         "files": [
@@ -403,8 +403,8 @@
                 "name": "progressCircle_windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/progressCircle/windows/progressCircle.js"
+        "mainFile": "src/progressCircle/windows/progressCircle.js",
+        "origin": "AUTHORED"
     },
     "components/radio-mac": {
         "files": [
@@ -424,8 +424,8 @@
                 "name": "10.11.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/radio/macOs/radio.js"
+        "mainFile": "src/radio/macOs/radio.js",
+        "origin": "AUTHORED"
     },
     "components/radio-windows": {
         "files": [
@@ -440,8 +440,8 @@
                 "name": "windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/radio/windows/radio.js"
+        "mainFile": "src/radio/windows/radio.js",
+        "origin": "AUTHORED"
     },
     "components/search-field": {
         "files": [
@@ -471,8 +471,8 @@
                 "name": "searchField_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/searchField/macOs/searchField.js"
+        "mainFile": "src/searchField/macOs/searchField.js",
+        "origin": "AUTHORED"
     },
     "components/segmented-control": {
         "files": [
@@ -502,8 +502,8 @@
                 "name": "tabs.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/segmentedControl/macOs/segmentedControl.js"
+        "mainFile": "src/segmentedControl/macOs/segmentedControl.js",
+        "origin": "AUTHORED"
     },
     "styles/background": {
         "files": [
@@ -518,8 +518,8 @@
                 "name": "macOs.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/background/macOs.js"
+        "mainFile": "src/style/background/macOs.js",
+        "origin": "AUTHORED"
     },
     "styles/color": {
         "files": [
@@ -529,8 +529,8 @@
                 "name": "windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/color/windows.js"
+        "mainFile": "src/style/color/windows.js",
+        "origin": "AUTHORED"
     },
     "styles/theme": {
         "files": [
@@ -540,8 +540,8 @@
                 "name": "windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/theme/windows.js"
+        "mainFile": "src/style/theme/windows.js",
+        "origin": "AUTHORED"
     },
     "utils/bezier-easing": {
         "files": [
@@ -551,8 +551,8 @@
                 "name": "bezierEasing.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/animation/bezierEasing.js"
+        "mainFile": "src/animation/bezierEasing.js",
+        "origin": "AUTHORED"
     },
     "styles/alignment": {
         "files": [
@@ -562,8 +562,8 @@
                 "name": "alignment.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/alignment.js"
+        "mainFile": "src/style/alignment.js",
+        "origin": "AUTHORED"
     },
     "styles/dimension": {
         "files": [
@@ -573,8 +573,8 @@
                 "name": "dimension.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/dimension.js"
+        "mainFile": "src/style/dimension.js",
+        "origin": "AUTHORED"
     },
     "styles/font-size": {
         "files": [
@@ -584,8 +584,8 @@
                 "name": "fontSize.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/fontSize.js"
+        "mainFile": "src/style/fontSize.js",
+        "origin": "AUTHORED"
     },
     "styles/hidden": {
         "files": [
@@ -595,8 +595,8 @@
                 "name": "hidden.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/hidden.js"
+        "mainFile": "src/style/hidden.js",
+        "origin": "AUTHORED"
     },
     "styles/margin": {
         "files": [
@@ -606,8 +606,8 @@
                 "name": "margin.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/margin.js"
+        "mainFile": "src/style/margin.js",
+        "origin": "AUTHORED"
     },
     "styles/padding": {
         "files": [
@@ -617,8 +617,8 @@
                 "name": "padding.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/padding.js"
+        "mainFile": "src/style/padding.js",
+        "origin": "AUTHORED"
     },
     "styles/text-align": {
         "files": [
@@ -628,8 +628,8 @@
                 "name": "textAlign.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/textAlign.js"
+        "mainFile": "src/style/textAlign.js",
+        "origin": "AUTHORED"
     },
     "styles/width": {
         "files": [
@@ -639,8 +639,8 @@
                 "name": "width.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/style/width.js"
+        "mainFile": "src/style/width.js",
+        "origin": "AUTHORED"
     },
     "components/text-mac": {
         "files": [
@@ -660,8 +660,8 @@
                 "name": "text_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/text/macOs/text.js"
+        "mainFile": "src/text/macOs/text.js",
+        "origin": "AUTHORED"
     },
     "components/text-windows": {
         "files": [
@@ -681,8 +681,8 @@
                 "name": "text_windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/text/windows/text.js"
+        "mainFile": "src/text/windows/text.js",
+        "origin": "AUTHORED"
     },
     "components/text-input-mac": {
         "files": [
@@ -712,8 +712,8 @@
                 "name": "textInput_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/textInput/macOs/textInput.js"
+        "mainFile": "src/textInput/macOs/textInput.js",
+        "origin": "AUTHORED"
     },
     "components/text-input-windows": {
         "files": [
@@ -733,8 +733,8 @@
                 "name": "textInput_windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/textInput/windows/textInput.js"
+        "mainFile": "src/textInput/windows/textInput.js",
+        "origin": "AUTHORED"
     },
     "components/title-bar-mac": {
         "files": [
@@ -774,8 +774,8 @@
                 "name": "titleBar.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/titleBar/macOs/titleBar.js"
+        "mainFile": "src/titleBar/macOs/titleBar.js",
+        "origin": "AUTHORED"
     },
     "components/title-bar-windows": {
         "files": [
@@ -810,8 +810,8 @@
                 "name": "titleBar.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/titleBar/windows/titleBar.js"
+        "mainFile": "src/titleBar/windows/titleBar.js",
+        "origin": "AUTHORED"
     },
     "components/toolbar": {
         "files": [
@@ -836,8 +836,8 @@
                 "name": "toolbar_mac.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/toolbar/macOs/toolbar.js"
+        "mainFile": "src/toolbar/macOs/toolbar.js",
+        "origin": "AUTHORED"
     },
     "utils/map-styles": {
         "files": [
@@ -847,8 +847,8 @@
                 "name": "mapStyles.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/utils/mapStyles.js"
+        "mainFile": "src/utils/mapStyles.js",
+        "origin": "AUTHORED"
     },
     "components/view-mac": {
         "files": [
@@ -858,8 +858,8 @@
                 "name": "view.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/view/macOs/view.js"
+        "mainFile": "src/view/macOs/view.js",
+        "origin": "AUTHORED"
     },
     "components/view-windows": {
         "files": [
@@ -869,8 +869,8 @@
                 "name": "view.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/view/windows/view.js"
+        "mainFile": "src/view/windows/view.js",
+        "origin": "AUTHORED"
     },
     "components/window-mac": {
         "files": [
@@ -885,8 +885,8 @@
                 "name": "window.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/window/macOs/window.js"
+        "mainFile": "src/window/macOs/window.js",
+        "origin": "AUTHORED"
     },
     "components/window-windows": {
         "files": [
@@ -901,8 +901,8 @@
                 "name": "window.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/window/windows/window.js"
+        "mainFile": "src/window/windows/window.js",
+        "origin": "AUTHORED"
     },
     "utils/color": {
         "files": [
@@ -917,8 +917,8 @@
                 "name": "color.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/color.js"
+        "mainFile": "src/color.js",
+        "origin": "AUTHORED"
     },
     "utils/monitor": {
         "files": [
@@ -928,8 +928,8 @@
                 "name": "monitor.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/monitor.js"
+        "mainFile": "src/monitor.js",
+        "origin": "AUTHORED"
     },
     "utils/os": {
         "files": [
@@ -944,8 +944,8 @@
                 "name": "os.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/os.js"
+        "mainFile": "src/os.js",
+        "origin": "AUTHORED"
     },
     "utils/placeholder-style": {
         "files": [
@@ -955,8 +955,8 @@
                 "name": "placeholderStyle.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/placeholderStyle.js"
+        "mainFile": "src/placeholderStyle.js",
+        "origin": "AUTHORED"
     },
     "utils/style-helper": {
         "files": [
@@ -966,8 +966,8 @@
                 "name": "styleHelper.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/styleHelper.js"
+        "mainFile": "src/styleHelper.js",
+        "origin": "AUTHORED"
     },
     "utils/value-ref": {
         "files": [
@@ -977,8 +977,8 @@
                 "name": "ValueRef.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/ValueRef.js"
+        "mainFile": "src/ValueRef.js",
+        "origin": "AUTHORED"
     },
     "utils/window-focus": {
         "files": [
@@ -988,8 +988,8 @@
                 "name": "windowFocus.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "src/windowFocus.js"
+        "mainFile": "src/windowFocus.js",
+        "origin": "AUTHORED"
     },
     "utils/mac-os": {
         "files": [
@@ -1004,8 +1004,8 @@
                 "name": "macOs.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "macOs.js"
+        "mainFile": "macOs.js",
+        "origin": "AUTHORED"
     },
     "utils/windows": {
         "files": [
@@ -1020,7 +1020,7 @@
                 "name": "windows.js"
             }
         ],
-        "origin": "AUTHORED",
-        "mainFile": "windows.js"
+        "mainFile": "windows.js",
+        "origin": "AUTHORED"
     }
 }
