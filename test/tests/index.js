@@ -1,7 +1,12 @@
 import { expect } from 'chai';
+import { MACOS, WINDOWS } from '../../src/os';
 import * as components from '../../index'
 
 describe('index', () => {
+  it('detect os', () => {
+    expect(components.os()).to.be.oneOf([MACOS, WINDOWS]);
+  });
+
   it('should be exported', () => {
     expect(components.Box).to.exist;
     expect(components.Button).to.exist;

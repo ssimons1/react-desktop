@@ -2,6 +2,8 @@
 
 var _chai = require('chai');
 
+var _os = require('../../src/os');
+
 var _index = require('../../index');
 
 var components = _interopRequireWildcard(_index);
@@ -9,6 +11,10 @@ var components = _interopRequireWildcard(_index);
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 describe('index', function () {
+  it('detect os', function () {
+    (0, _chai.expect)(components.os()).to.be.oneOf([_os.MACOS, _os.WINDOWS]);
+  });
+
   it('should be exported', function () {
     (0, _chai.expect)(components.Box).to.exist;
     (0, _chai.expect)(components.Button).to.exist;
